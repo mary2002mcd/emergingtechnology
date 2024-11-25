@@ -1,0 +1,23 @@
+name: Deploy ELIZA to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  
+  workflow_dispatch: 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Deploy 'eliza' folder to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./eliza  # Path to the folder you want to deploy
