@@ -1,2 +1,2 @@
 # emergingtechnology
-mary2002mcd.github.io
+https://mary2002mcd.github.io/emergingtechnology/
