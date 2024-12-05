@@ -2,8 +2,10 @@ name: Deploy ELIZA to GitHub Pages
 
 on:
   push:
-    branches:
-      - main  # Trigger workflow on pushes to the main branch
+    branches: ["main"]  # Trigger workflow on pushes to the main branch
+  pull_request:
+    branches: ["main"]
+    
   workflow_dispatch: 
 
 jobs:
