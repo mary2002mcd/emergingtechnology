@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <html>
+    <meta charset="UTF-8">
+
     <head>Eliza</head>
     <body>
-        <h1>My chatbot</h1>
+        <div id="chatbot-container">
+            <h1>Welcome!</h1>
+            <p>I am Eliza, type your feelings into the chat box and submit!</p>
+
+            <div id="chatHistory">
+            </div>
+
+            <!-- Input box for the user -->
+             <div id="inputContainer">
+                <input type="text" id="userInput" placeholder="Type your message"/>
+                <button id="sendButton">Send</button>
+             </div>
+
+        </div>
+        <!-- Call the javaScript -->
+        <script src="eliza.js"></script>
     </body>
 </html>
