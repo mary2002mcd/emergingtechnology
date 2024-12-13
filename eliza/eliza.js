@@ -30,4 +30,16 @@ const responses = {
          "Why do you want {0}?",
          "What would you do if you got {0}?",
          "If you got {0}, then what?"],
-}
+};
+
+//reflections
+const reflections = {
+    "I": "you",
+    "me": "you",
+    "my": "your",
+    "am": "are",
+    "you": "I",
+    "your": "my",
+    "yours": "mine",
+    "are": "am"
+};
