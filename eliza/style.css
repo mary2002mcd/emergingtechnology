@@ -1,0 +1,98 @@
+/* Reference I had Chatgpt generate css for me */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Chat Container */
+.chat-container {
+    background: #ffffff;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+h1 {
+    background-color: #4e54c8;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    padding: 10px;
+    color: #555;
+}
+
+/* Chat History */
+.chat-history {
+    height: 300px;
+    padding: 10px;
+    overflow-y: scroll;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-history div {
+    margin: 8px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.user {
+    background: #e6f7ff;
+    color: #004085;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.eliza {
+    background: #f8f9fa;
+    color: #495057;
+    text-align: left;
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    background: #4e54c8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #6a6dfb;
+}
