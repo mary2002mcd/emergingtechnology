@@ -55,3 +55,27 @@ function useTheReflections(text){
     return reflectedWords.join(' ');
 }
 
+//function to make the respone for the user
+function respond(userInput){
+    for(const pattern in responses){
+        //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec
+        const regex = new RegExp(pattern, 'i');
+        //check for matches
+        const match = userInput.match(regex);
+
+        if(match){
+            const responsesList = responses[pattern];
+            //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+            // picking a random response
+            const response = responsesList[Math.floor(Math.random() * responsesList.length)];
+            //reflecting captured groups to make response more natural
+            //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+            const reflectedGroups = match.slice(1).map(group => reflectedGroups(group || ''));
+            //replace the placeholders
+            https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+            return response.replace(/{(\d+)}/g, (_, index) => reflectedGroups[index]);
+        }
+    }
+    //if nothing is matching then put this sentence back to the user
+    return "I don't understand, can you rephrase?";
+}
