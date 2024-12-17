@@ -43,3 +43,15 @@ const reflections = {
     "yours": "mine",
     "are": "am"
 };
+
+//Function to reflect text
+function useTheReflections(text){
+    //make the text lowercase and split it up
+    const seperatedWords = text.lowerCase().split(/\s+/);
+    //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
+    //reflect each word
+    const reflectedWords = seperatedWords.map(word => reflections[word] || word);
+    //Join the reflected words back
+    return reflectedWords.join(' ');
+}
+
