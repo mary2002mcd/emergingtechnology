@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <meta charset="UTF-8">
-
-    <head>Eliza</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ELIZA</title>
+        <!-- Call the CSS file -->
+        <link rel="stylesheet" href="style.css">
+    </head>
     <body>
-        <div id="chatbot-container">
+        <div id="chat-container">
             <h1>Welcome!</h1>
-            <p>I am Eliza, type your feelings into the chat box and submit!</p>
+            <p>I am Eliza, type your feelings into the chat box and press the submit button!</p>
 
-            <div id="chatHistory">
+            <!-- Display this chats history -->
+            <div id="chat-history" class="chat-history">
             </div>
 
             <!-- Input box for the user -->
-             <div id="inputContainer">
-                <input type="text" id="userInput" placeholder="Type your message"/>
-                <button id="sendButton">Send</button>
+             <div id="input-container">
+                <input type="text" id="user-input" placeholder="Type your message" autocomplete="off"/>
+                <button id="send-button">Send</button>
              </div>
-
         </div>
+
         <!-- Call the javaScript -->
         <script src="eliza.js"></script>
+        
     </body>
 </html>
