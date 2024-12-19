@@ -4,7 +4,7 @@ Mary McDonnell
 G00401878
 
 ## Introduction
-This repository contains the Python solution for constructing and analyzing a trigram model using text data from Project Gutenberg. It demonstrates data preprocessing, model building, and text generation. 
+This repository contains the Python solution for constructing and analyzing a trigram model using text data from Project Gutenberg. It demonstrates data preprocessing, model building, and text generation. It also includes the files to run a ELIZA chatbot on github pages.
 
 ## Repository Includes
 `.github/workflows`
