@@ -9,12 +9,13 @@ This repository contains the Python solution for constructing and analyzing a tr
 ## Repository Includes
 `.github/workflows`
 `books/`
-`eliza`
+`eliza/eliza.js, index.html, style.css`
 `.gitignore`
 `README.md`
 `trigrams.ipynb`
 `trigrams.json`
 `data/words.txt`
+`requirements.txt`
 
 ## Link to Github Pages
 https://mary2002mcd.github.io/emergingtechnology/
