@@ -14,7 +14,7 @@ This repository contains the Python solution for constructing and analyzing a tr
 `README.md`
 `trigrams.ipynb`
 `trigrams.json`
-`words.txt`
+`data/words.txt`
 
 ## Link to Github Pages
 https://mary2002mcd.github.io/emergingtechnology/

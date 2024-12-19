@@ -1,0 +1,3 @@
+# Python standard library is sufficient
+# Specify Python version if applicable
+python>=3.8
